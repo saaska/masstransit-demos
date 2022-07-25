@@ -15,7 +15,7 @@ var busControl = Bus.Factory.CreateUsingRabbitMq( cfg =>
 });
 
 await busControl.StartAsync();
-Console.WriteLine($"Pong ready. Listening on queue \"{queueName}\", press a key to exit");
+Console.WriteLine($"MTPong ready. Listening on queue \"{queueName}\", press a key to exit");
 await Task.Run(() => Console.ReadKey());
 await busControl.StopAsync();
 
