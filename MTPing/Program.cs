@@ -8,7 +8,7 @@ var busControl = Bus.Factory.CreateUsingRabbitMq( cfg =>
     {
         cfg.Host("localhost", "/");
     });
-var endpoint = busControl.GetSendEndpoint(new Uri($"exchange:MessageContracts:PingMessage")).Result;
+var endpoint = busControl.GetSendEndpoint(new Uri($"exchange:MTPing.MessageContracts:PingMessage")).Result;
 
 var source = new CancellationTokenSource(TimeSpan.FromSeconds(10));
 await busControl.StartAsync(source.Token);
