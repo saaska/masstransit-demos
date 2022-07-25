@@ -5,7 +5,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Responder</RootNamespace>
+        <RootNamespace>MTPong</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
